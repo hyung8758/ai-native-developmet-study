@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <main class="board">
+      <h1>My Task Board</h1>
+      <form id="task-form">
+        <label class="sr-only" for="task-title">새 Task</label>
+        <input id="task-title" name="title" placeholder="새로운 Task 입력" maxlength="120" required>
+        <button type="submit">추가</button>
+      </form>
+      <p id="message" role="status"></p>
+      <ul id="task-list" aria-label="Task 목록"></ul>
+    </main>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
